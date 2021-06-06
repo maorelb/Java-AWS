@@ -1,0 +1,13 @@
+#!/bin/bash
+
+wget https://s3.amazonaws.com/apllication-code-bucket-dsp202/Ex1.jar -O //home/ec2-user/Ex1.jar
+
+wget https://s3.amazonaws.com/apllication-code-bucket-dsp202/workerScript.txt -O //home/ec2-user/workerScript.txt
+
+wget https://s3.amazonaws.com/apllication-code-bucket-dsp202/template.html -O //home/ec2-user/template.html
+
+cd //home/ec2-user
+
+chmod 777 //home/ec2-user/Ex1.jar
+
+java -cp //home/ec2-user/Ex1.jar Ex1.Manager
